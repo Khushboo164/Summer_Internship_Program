@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTORS</title>
+    <style>
+        label{
+            padding-left: 20px;
+        }
+        input:focus{
+            border: 6px solid blue;
+        }
+
+        li:first-child{
+            color: blue;
+        }
+        li:last-child{
+            color: blueviolet;
+        }
+         div p{               /*descendant selector - targets<p> anywhere inside <div>  */
+            color: aqua;
+        }
+        div > p{              /*child selector - targets only direct child  */
+            color: cadetblue;
+        }
+        section > p{          /*child selector - targets only direct child   on section inside div*/
+            color: chocolate;   
+        }
+        h1 + p{             /* Adjacent siblings - targets only immediate next sibling element */
+            color: cornflowerblue;
+        }
+        h1 ~ p{            /* general siblings - targets all sibling element */
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h2>Unordered List📃</h2>
+    <ul>
+        <li>Selectors</li>
+        <li>Font-size</li>
+        <li>Color</li>
+        <li>Background-color</li>
+    </ul>
+
+    <div>
+        <p>Direct child</p>
+        <section>
+            <p>Nested child</p>
+        </section>
+    </div>
+
+    <div>
+        <h1>HEADING</h1>
+        <p>First Paragraph (Styled)</p>
+        <p>Second Paragraph</p>
+    </div>
+</body>
+</html>

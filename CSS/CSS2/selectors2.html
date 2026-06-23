@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTOR2</title>
+    <style>
+        /* h1,h3,p{          /* multiple selector
+            color: cadetblue;
+        } */
+
+        .A,.B,.C{           /* multiple selector-using class selector*/
+            color:cadetblue;
+        }
+
+
+
+        p.C{                /* combined selector- applys to all p having class C*/
+            color: blueviolet;
+        }
+
+        li:nth-child(2){    /* nth child selector- selects element by position */
+            color: palevioletred;
+        }
+        li:nth-child(odd){  /* even odd selector- selects element by even/odd */
+            color: cornflowerblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="A">WELCOME BACK(●'◡'●)</h1>
+    <h3 class="B">Selectors part 2</h3>
+    <p class="C">Learning advance selectors properties using css.</p>
+    <p class="C">Lets Go!</p>
+
+    <ul>
+        <li>ABC</li>
+        <li>XYZ</li>
+        <li>PQR</li>
+        <li>STU</li>
+        <li>UVW</li>
+        <li>GHI</li>
+    </ul>
+
+</body>
+</html>

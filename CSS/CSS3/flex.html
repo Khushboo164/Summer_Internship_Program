@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX_CSS</title>
+    <style>
+        div{
+            border: 2px dotted cadetblue;
+            margin: 20px;
+            padding: 10px;
+              /*makes content flexible for further styling and positioning */
+        }
+        .head{
+            display: flex;
+            justify-content:center;
+             /* justify-content: baseline; */
+             /* justify-content: flex-start; */
+             /* justify-content: space-around; */
+             /* justify-content: space-between; */
+            height: 200px;
+            align-items:center;
+            /* align-items: flex-end;
+            align-items: flex-start; */
+            /* flex-direction: column-reverse;
+            flex-direction: column; */
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: nowrap; */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            gap: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Learning FlexBox Properties of CSS!</h1>
+    <div class="head">
+    <div>CARD 1</div>
+    <div>CARD 2</div>
+    <div>CARD 3</div>
+    </div>
+</body>
+</html>

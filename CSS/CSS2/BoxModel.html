@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        button{
+            padding: 10px;
+             /* padding: 20px 30px 50px 60px;    top right bottom left */
+        }
+        .box{
+            border: 3px dotted blueviolet;
+            border-radius: 20px;
+            height: 250px;
+        }
+        .Sub1{
+            /* margin: 20px;  t*/ 
+             margin: 50px 70px 100px 150px; /*top right bottom left  */
+            border-radius: 10px;
+        }
+        .Sub1:hover{
+            background-color: pink;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1 id="A">Box Model Implementation!</h1>
+    <div class="box">
+    <button class="Sub1">Submit</button>
+    <button class="Sub2">Submit</button><br>
+    <label for="">Name:</label>
+    <input type="text"><br>
+    </div>
+    
+</body>
+</html>

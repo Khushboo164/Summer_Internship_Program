@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION_CSS</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        .container{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+        }
+        .box{
+            display: flex;
+            border: 7px dotted rgb(241, 193, 193);
+            height: 200px;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 200px;
+            margin: 30px;
+            color: rgb(241, 193, 193);
+            border-bottom-color:transparent ;
+            animation: moveBox 2s ease-in-out infinite;
+        }
+        @keyframes moveBox{
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="box">
+            Loading!...
+        </div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID_CSS</title>
+    <style>
+        .container{
+           display: grid;
+           grid-template-areas:" side-bar nav nav2" "side-bar Main-content Side-content" "footer footer footer";
+           gap: 10px;
+        }
+        .A{
+            display: flex;
+            justify-content: center;
+        }
+        h1{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .Main{
+            border: 1px solid black;
+            padding: 20px;
+            background-color:rgb(253, 231, 204);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            width: 800px;
+            margin: 40px;
+            padding-bottom: 80px;
+            padding-top: 80px;
+
+            
+        }
+        .items{
+            border: 2px solid black;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100px; */
+            border-radius: 15px;
+        }
+        .items1{
+            background-color: rgb(249, 249, 24);
+            grid-area: nav;
+            height: 100px;
+            /* margin-top: 10px; */
+            /* display: flex; */
+            width: 200px;
+
+        }
+        .items2{
+            background-color:antiquewhite;
+            grid-area: nav2;
+            height: 100px;
+            width: 100px;
+
+            /* margin-top: 10px; */
+        }
+        .items3{
+            background-color:rgb(186, 49, 186);
+            grid-area: side-bar;
+            display: flex;
+            height: 365px;
+            /* margin: 10px; */
+            width: 195px;
+        }
+        .items4{
+            background-color:rgb(207, 77, 77);
+            grid-area: Main-content;
+            height: 250px;
+            width: 200px;
+            /* margin-bottom: 1px; */
+        }
+        .items5{
+            background-color:chocolate;
+            grid-area: Side-content;
+            height: 250px;
+            width: 100px;
+        }
+        .items6{
+            background-color: rgb(73, 221, 73);
+            grid-area: footer;
+            height: 100px;
+        }
+
+        @media(max-width:768px){
+            .container{
+                grid-template-areas: "nav"
+                "nav2"
+                "side-bar"
+                "Main-content"
+                "Side-content"
+                "footer";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="A">
+    <div class="Main">
+    <div class="container">
+        <div class="items items1"> ONE </div>
+        <div class="items items2"> TWO </div>
+        <div class="items items3"> THREE</div>
+        <div class="items items4"> FOUR</div>
+        <div class="items items5"> FIVE</div>
+        <div class="items items6"> SIX</div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

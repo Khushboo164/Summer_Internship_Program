@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSFORM&TRANSITION</title>
+    <style>
+        .container{
+            display: grid;
+            gap: 20px;
+        }
+        .items{
+            display: flex;
+            height: 100px;
+            width: 1500px;
+            transition-duration: 5s;
+        }
+        
+         .container:hover .items1{
+            transition-timing-function: ease;
+            /* transition-delay: 1s; */
+            transform: translate(1200px);
+           
+        } 
+        .container:hover .items2{
+            transition-timing-function: ease-in;
+            /* transition-delay: 1s; */
+            transform: translate(1200px);
+           
+        } 
+        .container:hover .items3{
+            transition-timing-function: ease-in-out;
+            /* transition-delay: 1s; */
+            transform: translate(1200px);
+            
+        } 
+        .container:hover .items4{
+            transition-timing-function: ease-out;
+            /* transition-delay: 1s; */
+            transform: translate(1200px);
+            
+        } 
+        .container:hover .items5{
+            transition-timing-function: linear;
+            /* transition-delay: 1s; */
+            transform: translate(1200px);
+            
+        } 
+        .container:hover .items6{
+            transition-timing-function: steps(8);
+            /* transition-delay: 1s; */
+            transform: translate(1200px);
+            
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items items1">
+            <div class="IMAGE1">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.m-tklwsEEV6A05Q8W0noGQHaFU?r=0&cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="" height="120px"> 
+            </div></div>
+        <div class="items items2">
+            <div class="IMAGE2">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.m-tklwsEEV6A05Q8W0noGQHaFU?r=0&cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="" height="120px">
+        </div></div>
+        <div class="items items3">
+            <div class="IMAGE3">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.m-tklwsEEV6A05Q8W0noGQHaFU?r=0&cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="" height="120px">
+        </div></div>
+        <div class="items items4">
+            <div class="IMAGE4">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.m-tklwsEEV6A05Q8W0noGQHaFU?r=0&cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="" height="120px">
+         </div></div>
+         <div class="items items5">
+            <div class="IMAGE5">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.m-tklwsEEV6A05Q8W0noGQHaFU?r=0&cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="" height="120px">
+         </div></div>
+         <div class="items items6">
+            <div class="IMAGE6">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.m-tklwsEEV6A05Q8W0noGQHaFU?r=0&cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="" height="120px">
+         </div></div>
+    </div>
+</body>
+</html>
