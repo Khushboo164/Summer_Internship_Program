@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>hello guys!</h1>
+    </div>
+    <div class="city">
+            <p>we are present in indore</p>
+    </div>
+
+    <div>
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+
+    <script>          
+    // const i = document.getElementById("container");
+    // console.log(i);
+
+    // const cl = document.getElementsByClassName("city");
+
+    // const b = document.getElementsByClassName("h1")
+    // console.log(b)
+    // b.style.color = 'blue'
+    const c = document.querySelector("#container") // for id selector
+    console.log(c)
+    const e = document.querySelector("h1")//for tag
+    console.log(e)
+    e.style.color = 'blue'
+    const f = document.querySelector(".city") // for class selector
+    console.log(f)
+
+    const a = document.querySelectorAll("li")
+    a.forEach(element => {
+        console.log(element)
+        element.style.color = 'red'
+        element.style.listStyle = 'none'
+        
+    });
+    
+
+    // console.log(cl);
+    </script>
+</body>
+</html>

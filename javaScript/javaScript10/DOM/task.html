@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Welcome to my webpage(●'◡'●)</h1>
+
+    <div>
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+        </ul>
+    </div>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate laboriosam rem consectetur neque ipsam enim aspernatur praesentium a quo. Blanditiis a ipsam enim eligendi tenetur quo animi. Laborum, obcaecati id.
+    Itaque consectetur nobis neque sed est modi. Harum beatae facilis voluptates voluptatum facere eaque sequi, culpa veritatis nulla, praesentium id dolore impedit nesciunt odit expedita laudantium iste. Harum, impedit laudantium?
+    Assumenda, officia eveniet nesciunt quibusdam consectetur aliquid sit ducimus culpa? Nobis dolorem corrupti saepe possimus voluptatibus eum inventore veniam error minus omnis numquam, ducimus, quaerat, ratione nisi culpa eligendi labore?
+    Molestias soluta consequuntur error ullam dolores nobis suscipit, ipsum officia harum cumque. Est, atque. Facere iure rem quibusdam voluptate delectus atque fugit, minima porro assumenda harum aliquam itaque error eligendi?
+    Reiciendis aliquid, dolorem cumque incidunt delectus quam nisi quis quidem labore sed nesciunt nam dignissimos unde dolore eum cum asperiores sapiente et autem libero expedita quas iure. Reiciendis, inventore quibusdam!</p>
+    
+    <a href=""><button>Know more👆</button></a>
+    <script>
+
+        const a = document.querySelector('h1')
+        console.log(a)
+        a.style.color = 'blue'
+
+        const b = document.querySelectorAll('li')
+        b.forEach(element => {
+            console.log(b)
+            element.style.listStyle = 'none'
+            element.style.color = 'pink'
+            // element.style.backgroundColor = 'grey'
+        });
+
+        const c = document.querySelector('p')
+        console.log(c)
+        c.style.color = "brown"
+
+        const btn  = document.querySelector('button')
+        btn.style.backgroundColor = 'pink'
+        console.log(btn)
+
+        btn.onclick = () => {
+            console.log("btn clicked")
+        }
+
+
+
+    </script>
+
+
+
+</body>
+</html>
