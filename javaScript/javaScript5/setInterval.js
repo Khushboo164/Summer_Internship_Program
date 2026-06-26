@@ -27,12 +27,12 @@
 // }, 1000)
 
 //table of 2
-let count = 1;
+let cnt = 1;
 const timer = setInterval(() => {
     
-    console.log( 2 * count);
-    count++;
-    if(count >= 11){
+    console.log( 2 * cnt);
+    cnt++;
+    if(cnt >= 11){
         clearInterval(timer)
     }
 },1000)

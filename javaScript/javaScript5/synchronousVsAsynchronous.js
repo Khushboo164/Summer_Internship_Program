@@ -28,7 +28,7 @@ let time = setInterval(() => {
     if(count < 1){
         clearInterval(time);
         setTimeout(() => {
-            console.log("time's up")
+            console.log("Time's up")
         }, 9000)
     }
 }, 1000)

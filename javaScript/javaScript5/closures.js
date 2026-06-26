@@ -18,7 +18,7 @@ ans();
 
 
 //example2
-function main(){
+function main1(){
     var x = 10
     return function main2(){
         x++;
@@ -28,7 +28,7 @@ function main(){
         }
     }
 }
-const ans1 = main();
+const ans1 = main1();
 const ans2 = ans1();
 ans2();
 ans2();
