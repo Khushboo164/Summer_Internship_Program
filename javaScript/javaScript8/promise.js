@@ -1,6 +1,6 @@
 function greet(){
     return new Promise((res,rej) => {
-        res("good morning");
+        res("Good morning");
     })
 }
 

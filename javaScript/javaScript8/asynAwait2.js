@@ -63,7 +63,7 @@ function user(number){
                 res(1234)
             }
             else{
-                rej("invalid number")
+                rej("Invalid number")
             }
         },3000)
     })
@@ -78,7 +78,7 @@ function verify(userOtp, actualOtp){
             res("welcome")
         }
         else{
-            console.log("invalid otp")
+            console.log("Invalid otp")
         }
     })
 
