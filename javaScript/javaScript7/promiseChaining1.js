@@ -4,7 +4,7 @@ function selectMovie(){
     return new Promise((res,rej) => {
         // console.log("Selecting movie")
         setTimeout(() =>{
-            console.log("movie selected")
+            console.log("Movie selected")
             res()
         },1000)
     })

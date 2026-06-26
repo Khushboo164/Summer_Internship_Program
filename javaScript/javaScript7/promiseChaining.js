@@ -82,10 +82,10 @@
  // converting function in promise- to solve the issue
 function loginUser(){
     return new Promise((res,rej) => {
-        console.log("logging in....")
+        console.log("Logging in....")
 
     setTimeout(() => {
-        console.log("logged in✅..")
+        console.log("Logged in✅..")
         res();
     },1000);
     }) 
@@ -93,7 +93,7 @@ function loginUser(){
 
 function getProfile(){
     return new Promise((res,rej) =>{
-        console.log("fetching your profile... ")
+        console.log("Fetching your profile... ")
 
     setTimeout(() => {
         console.log("Profile fetched✅..")
@@ -104,9 +104,9 @@ function getProfile(){
 
 function getOrder(){
     return new Promise((res,rej) => {
-        console.log("preparing your order...");
+        console.log("Preparing your order...");
     setTimeout(() => {
-        console.log("order prepared🍕🍔")
+        console.log("Order prepared🍕🍔")
         res();
     },3000)
     })
@@ -117,7 +117,7 @@ function payment(){
         console.log("Processing payment...")
 
     setTimeout(() => {
-        console.log("payment done💳")
+        console.log("Payment done💳")
         res();
     },4000)
     })
