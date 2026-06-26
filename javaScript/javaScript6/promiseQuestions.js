@@ -71,10 +71,10 @@
 function payment(balance){
     return new Promise((res,rej) => {
         if(balance >= 500){
-            res("payment successful✔️")
+            res("Payment successful✔️")
         }
         else{
-            rej("insufficient balance❌")
+            rej("Insufficient balance❌")
         }
     })
 };

@@ -43,7 +43,7 @@ connection
     console.log(res,"promise fulfilled✔️");
 })
 .catch(() => {
-    console.log("promise rejected❌")
+    console.log("Promise rejected❌")
 });
 
 //2nd way
