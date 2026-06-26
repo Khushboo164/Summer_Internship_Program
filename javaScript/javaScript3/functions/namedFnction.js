@@ -22,7 +22,7 @@ sunstone2(2025);
 function sunstone3(course, batch){
     console.log(`80% students placed of ${course} in batch ${batch}`);
 }
-sunstone3("BCA",2026);
+sunstone3("BCA",2025);
 
 //return type function
 

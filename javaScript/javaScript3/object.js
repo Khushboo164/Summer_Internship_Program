@@ -47,7 +47,7 @@ console.log(details)
 
 //adding function
 details.greet = function(){
-    console.log(`Hello, this side ${this.Name}, I live in ${this.City}, currently doing ${this.Course}`)
+    console.log(`Hello, this side ${this.Name}, I live in ${this.City}, currently Doing ${this.Course}`)
 }
 
 console.log(details.greet());

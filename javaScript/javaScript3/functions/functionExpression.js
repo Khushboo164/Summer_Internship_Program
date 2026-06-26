@@ -10,13 +10,13 @@ sunstone();
 const sunstone2 = function(batch){
     console.log(`80% placement in batch ${batch}`)
 }
-sunstone2(2026);
+sunstone2(2025);
 
 //2 parameters and argument
 const sunstone3 = function(course,batch){
     console.log(`80% placement of ${course} in batch ${batch}`)
 }
-sunstone3("BCA",2026);
+sunstone3("BCA",2025);
 
 //return function
 
