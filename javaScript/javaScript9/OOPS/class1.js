@@ -8,11 +8,11 @@ class Student{
 
 }
 //creating multiple objects from Student class
-const Student1 = new Student("khushboo" , 19)
+const Student1 = new Student("Khushboo" , 19)
 console.log(Student1);
-const Student2 = new Student("nisha" , 18)
+const Student2 = new Student("Nisha" , 18)
 console.log(Student2);
-const Student3 = new Student("riya" , 19)
+const Student3 = new Student("Riya" , 19)
 console.log(Student3);
 
 
@@ -26,6 +26,6 @@ class Details{
     }
 }
 
-const Detail1 = new Details("siya")
+const Detail1 = new Details("Siya")
 console.log(Detail1)
 Detail1.greet();

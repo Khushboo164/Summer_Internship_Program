@@ -24,7 +24,7 @@ class Student extends Person{
 
 //creating object of child class
 const Student1 = new Student(
-    "Nisha" , "MERN"
+    "nisha" , "MERN"
 );
 console.log(Student1);
 
