@@ -11,7 +11,7 @@ console.log(sum);
 // //example2
 const cart = [
     {
-        price : 1000
+        price : 1600
     },
     {
         price : 1500

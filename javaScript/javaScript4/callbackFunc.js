@@ -10,7 +10,7 @@ user(greet);
 
 //callback with one parameter
 function greet1(){
-    console.log("hello!");
+    console.log("helloo!");
 }
 function user1(greet1,name){
     greet1();

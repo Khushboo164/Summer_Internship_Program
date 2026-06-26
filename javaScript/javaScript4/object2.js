@@ -19,7 +19,7 @@ const main = [
     {
         id: 4,
         product: "sunglasses",
-        price: 1500
+        price: 1550
     }
 ]
 console.log(main);

@@ -3,6 +3,6 @@
 //syntax - arr.map(callbackFunction);
 const numbers = [1,2,3,4];
 const double = numbers.map(i => {
-    return (i * 2) + 2;
+    return (i * 2) + 3;
 });
 console.log(double);

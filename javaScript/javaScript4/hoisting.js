@@ -8,6 +8,6 @@ function greet(){
 
 //in variable - declaration is hoisted but value will not be assigned
 console.log(name);
-var name = "khushboo";
+var name = "Khushboo";
 
 
