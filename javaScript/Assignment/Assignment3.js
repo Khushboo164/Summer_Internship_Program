@@ -10,7 +10,7 @@ console.log(discountPrice);
 const users = [
     {id: 1, name: "khushboo"},
     {id: 2, name: "nisha"},
-    {id: 3, name: "jayant"}
+    {id: 3, name: "riya"}
 ]
 
 const users1 = users.map(i => i.name)

@@ -3,7 +3,7 @@
 const greet = function(Name){
     console.log(`Hello!, ${Name}`)
 }
-greet("Khushboo");
+greet("Khushboo💕");
 
 
 //Question 2 - total price problem

@@ -50,7 +50,7 @@ let ABC = [
     Product : "phone",
     productId : 302,
     Price : 56000,
-    DateOfPurchase : 23 
+    DateOfPurchase : 24
 }
 ]
 ABC.forEach(i =>{
