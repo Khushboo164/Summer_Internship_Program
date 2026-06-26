@@ -23,7 +23,7 @@ console.log(typeof d);
 
 
 //converting number to string
-let e = 3;
+let e = 4;
 let f = String(e);
 console.log(typeof f);
 console.log(f)

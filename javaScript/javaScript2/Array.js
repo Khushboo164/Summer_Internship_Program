@@ -5,7 +5,7 @@ arr.forEach(i => {
     console.log(i)
 });
 
-arr.push(20); //insert element from back
+arr.push(30); //insert element from back
 console.log( "after push operation: " + arr);
 
 arr.pop()

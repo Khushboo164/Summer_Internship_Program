@@ -4,7 +4,7 @@ let a = "nisha🎀";
 console.log(a);
 
 //way to create string 2 as a object because of new
-let b = new String("jayant");
+let b = new String("riya");
 console.log(b)
 
 const c = "star of the class"
