@@ -26,7 +26,7 @@ let a = 10
 console.log(a)
 var b = 30
 console.log(b)
-const c = 60
+const c = 65
 console.log(c)
 {
     let a = 20       
