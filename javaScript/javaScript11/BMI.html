@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <style>
+        /* Google Font (Optional) */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #E8F5E9, #C8E6C9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 450px;
+            background: #fff;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2E7D32;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 17px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #A5D6A7;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: .3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #43A047;
+            box-shadow: 0 0 8px rgba(67, 160, 71, .3);
+        }
+
+        #btn {
+            width: 100%;
+            padding: 14px;
+            background: #43A047;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        #btn:hover {
+            background: #2E7D32;
+            transform: translateY(-2px);
+        }
+
+        #btn:active {
+            transform: scale(.98);
+        }
+
+        #result {
+            margin-top: 25px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+            color: #333;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>BMI Calculator</h1>
+
+        <div class="input-group">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter weight" step="0.1">
+        </div>
+
+        <div class="input-group">
+            <label for="height">Height (m):</label>
+            <input type="number" id="height" placeholder="Enter height" step="0.01">
+        </div>
+
+        <button id="btn">Calculate BMI</button>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+
+            let weight = parseFloat(document.getElementById("weight").value);
+            let height = parseFloat(document.getElementById("height").value);
+            let resultElement = document.getElementById("result");
+
+
+            if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+                resultElement.innerText = "Please enter valid positive numbers.";
+                return;
+            }
+
+
+            let bmi = weight / (height * height);
+            let category = "";
+
+
+            if (bmi < 18.5) {
+                category = "Underweight";
+            } else if (bmi < 25) {
+                category = "Normal weight";
+            } else if (bmi < 30) {
+                category = "Overweight";
+            } else {
+                category = "Obese";
+            }
+
+            resultElement.innerText = `Your BMI is: ${bmi.toFixed(2)} (${category})`;
+        });
+    </script>
+
+</body>
+
+</html>

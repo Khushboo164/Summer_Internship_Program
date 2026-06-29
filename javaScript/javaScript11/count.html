@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+            /* justify-content: space-between; */
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <button class="inc"> increase </button>
+        <h3>0</h3>
+        <button class="dec"> decrease </button>
+    </div>
+</body>
+<script>
+
+    const Inc = document.querySelector('.inc')
+    console.log(Inc)
+    const cnt = document.querySelector('h3')
+    console.log(cnt)
+
+    Inc.addEventListener('click', () => {
+        // console.log('clicked')
+        // console.log(cnt.innerHTML)
+        // console.log(cnt.innerText)
+        cnt.innerHTML = Number(cnt.innerHTML) + 1
+        console.log(cnt.innerHTML)
+    })
+
+    const Dec = document.querySelector('.dec')
+
+    Dec.addEventListener('click', () => {
+        if (cnt.innerHTML > 0) {
+            cnt.innerHTML = Number(cnt.innerHTML) - 1
+        }
+    })
+
+    document.body.style.display = "flex"
+    document.body.style.display = "flex";
+    document.body.style.justifyContent = "center";
+    document.body.style.alignItems = "center";
+    document.body.style.height = "100vh";
+    document.body.style.backgroundColor = "#fff3cd";
+    // document.body.style.fontFamily = "Arial";
+
+    const container = document.querySelector("div");
+
+    container.style.display = "flex";
+    container.style.alignItems = "center";
+    container.style.gap = "20px";
+    container.style.padding = "25px";
+    container.style.backgroundColor = "#6F4E37";
+    container.style.borderRadius = "10px";
+    container.style.boxShadow = "0 5px 15px rgba(0,0,0,0.2)";
+
+
+    Inc.style.padding = "12px 20px";
+    Inc.style.fontSize = "18px";
+    Inc.style.backgroundColor = "#D2B48C";
+    Inc.style.color = "white";
+    Inc.style.border = "none";
+    Inc.style.borderRadius = "8px";
+    Inc.style.cursor = "pointer";
+
+
+    Dec.style.padding = "12px 20px";
+    Dec.style.fontSize = "18px";
+    Dec.style.backgroundColor = "#8D6E63";
+    Dec.style.color = "white";
+    Dec.style.border = "none";
+    Dec.style.borderRadius = "8px";
+    Dec.style.cursor = "pointer";
+
+
+    cnt.style.fontSize = "35px";
+    cnt.style.color = "#333";
+    cnt.style.margin = "0";
+
+</script>
+
+</html>
