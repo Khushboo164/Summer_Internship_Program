@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project World</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+        }
+
+        /* .container {
+            
+        } */
+        .card{
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 1200px;
+            margin: 30px;
+            /* padding: 30px; */
+            display: flex;
+        }
+        /* .{
+            margin: 20px;
+        } */
+        img{
+            height: 200px;
+            width: 400px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .text{
+            display: block;
+            justify-content: center;
+            /* align-items: center; */
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+        .btn{
+            display: flex;
+            margin-left: 20px;
+        }
+        .btn button{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .btn button:hover{
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Project World</h1>
+        <h2> Welcome to My project world</h2>
+        <div class="container">
+            <div class="card">
+                <!-- <div class="image"> -->
+                  <img src="https://tse4.mm.bing.net/th/id/OIP.3futBDbEF0pUPA-2kWYNGQHaDo?r=0&cb=thfc1falcon4&w=816&h=400&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+                <!-- </div> -->
+                <div class="text">
+                    <h2>Project Name - Counter</h2>
+                    <div class="btn">
+                    <p><a href="/javaScript/javaScript11/count.html"><button>Live Now</button></a></p>
+                </div>
+                </div>
+            </div>
+
+             <div class="container">
+            <div class="card">
+                <!-- <div class="image"> -->
+                  <img src="https://user-images.githubusercontent.com/105456310/193413706-1c84fa73-9d9a-46df-97b7-41a38eff1d1b.png" alt="">
+                <!-- </div> -->
+                <div class="text">
+                    <h2>Project Name - TO-Do List</h2>
+                    <div class="btn">
+                    <p><a href="/javaScript/javaScript11/toDoList.html"><button>Live Now</button></a></p>
+                </div>
+                </div>
+            </div>
+
+             <div class="container">
+            <div class="card">
+                <!-- <div class="image"> -->
+                  <img src="https://user-images.githubusercontent.com/78557222/122156974-adfedd00-ce87-11eb-8f19-b40a40dc86d8.png" alt="">
+                <!-- </div> -->
+                <div class="text">
+                    <h2>Project Name - BMI calculator</h2>
+                    <div class="btn">
+                    <p><a href="/javaScript/javaScript11/BMI.html"><button>Live Now</button></a></p>
+                </div>
+                </div>
+            </div>
+
+             <div class="container">
+            <div class="card">
+                <!-- <div class="image"> -->
+                  <img src="https://tse4.mm.bing.net/th/id/OIP.7j49fkmzAHuRrhM8AH2xqQHaDt?r=0&cb=thfc1falcon4&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+                <!-- </div> -->
+                <div class="text">
+                    <h2>Project Name - Medium Clone</h2>
+                    <div class="btn">
+                    <p><a href="/Assignments/project/medium.html"><button>Live Now</button></a></p>
+                </div>
+                </div>
+            </div>
+
+        </div>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        // Check if a user is currently logged in
+        const activeUser = JSON.parse(localStorage.getItem('activeUser'));
+
+        if (!activeUser) {
+            // If no active user, kick them back to the home page
+            window.location.href = "index.html";
+        } else {
+            // Display their registered name
+            // document.getElementById('welcomeMessage').innerText = "Welcome to the dashboard, " + activeUser.name + "!";
+        }
+
+        // Logout function
+        function logout() {
+            localStorage.removeItem('activeUser'); // Clear session
+            window.location.href = "index.html";   // Go back to home
+        }
+    </script>
+</body>
+
+</html>

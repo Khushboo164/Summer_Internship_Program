@@ -181,6 +181,34 @@
         })
 
 
+        taskList.addEventListener('click' , (ev) => {
+            let list = ev.target;
+            // console.log(list)
+
+            if(list.classList.contains('up')){
+                let parentElement = list.parentElement.parentElement;
+                console.log(parentElement);
+                let previousElement = parentElement.previousElementSibling;
+                console.log(previousElement);
+                taskList.insertBefore(parentElement,previousElement);
+            }
+            else if(list.classList.contains('down')){
+                let parentElement = list.parentElement.parentElement;
+                console.log(parentElement);
+                let nextElement = parentElement.nextElementSibling;
+                console.log(nextElement);
+                taskList.insertBefore(nextElement , parentElement);
+            }
+            else if(list.classList.contains('del')){
+                let parentElement = list.parentElement.parentElement;
+                console.log(parentElement);
+                parentElement.remove();
+
+            }
+
+        })
+
+
 
     </script>
 </body>

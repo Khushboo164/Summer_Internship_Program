@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="btn">
+        <button class="pink">1</button>
+        <button class="blue">2</button>
+        <button class="purple">3</button>
+    </div>
+
+    <script>
+        const red = document.querySelector('.pink');
+        const blue = document.querySelector('.blue');
+        const babyPink = document.querySelector('.purple');
+        const btn = document.querySelector('.btn');
+
+        // red.addEventListener('click',(a) =>{
+        //     document.body.style.backgroundColor = 'red'
+        // })
+        //  blue.addEventListener('click',(a) =>{
+        //     document.body.style.backgroundColor = 'blue'
+        // })
+        //  babyPink.addEventListener('click',(a) =>{
+        //     document.body.style.backgroundColor = 'yellow'
+        // })
+
+        btn.addEventListener('click',(nag)=>{
+            // console.log(nag.target);
+            let data = nag.target;
+        if(data.classList.contains('pink')){
+             localStorage.setItem("savedColor",'pink')
+             document.body.style.backgroundColor = 'pink'
+        }else if(data.classList.contains('blue')){
+            localStorage.setItem("savedColor",'blue')
+             document.body.style.backgroundColor = 'blue'
+        }
+        else if(data.classList.contains('purple')){
+        localStorage.setItem("savedColor",'purple')
+             document.body.style.backgroundColor = 'purple'
+        }
+        })
+
+        let previousColor = localStorage.getItem('savedColor');
+        if(previousColor){
+            document.body.style.backgroundColor = previousColor;
+        }
+    </script>
+</body>
+</html>
