@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- cdn path for axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <title>To-Do List Application</title>
+</head>
+
+<body>
+
+    <h1>To-Do List</h1>
+    <input type="text" class="inp" placeholder="Enter your task" name="task">
+    <button>Submit</button>
+    <ul class="taskList"></ul>
+
+    <script>
+        const inp = document.querySelector('.inp'); //picking input tag
+        const btn = document.querySelector('button'); //picking button
+        const TaskList = document.querySelector('.taskList'); //picking list-taskList
+
+        btn.addEventListener('click', async () => {  //adding to store data when clicked
+            let Task = inp.value; //picking value from the input
+            let { data } = await axios.get(`/addTask?work=${Task}`); //sending input value to the /addTask path and also receiving value from backend /addTask in data(variable)
+            console.log(data);
+            TaskList.innerHTML=""; //used to remove previous array
+
+            data.forEach(e => {  //to traverse in array and pick each element 
+                let li = document.createElement('li'); //creating li tag
+                li.classList.add('taskName'); //adding classname to li tag
+                //going inside li tag and storing all the bellow content mentioned
+                li.innerHTML = `${e}
+                <span class = "btnGroup">
+                    <button class ="upBtn">👆</button>
+                    <button class ="downBtn">👇</button>
+                    <button class ="delBtn">❎</button>
+                    </span>`
+
+                TaskList.append(li); //appending li in taskList
+            });
+        })
+    </script>
+</body>
+</html>
