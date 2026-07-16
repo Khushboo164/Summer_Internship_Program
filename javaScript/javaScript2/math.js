@@ -1,7 +1,7 @@
 const sum = 0.1 + 0.2;
 console.log(sum.toFixed(4));
 
-let a = 45.89562737
+let a = 45.89562756
 console.log(a.toPrecision(4));
 
 let b = 2.9;
