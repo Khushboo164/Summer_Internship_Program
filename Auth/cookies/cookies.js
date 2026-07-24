@@ -62,5 +62,5 @@ app.get('/admin', (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log(`Server is running at ${PORT}`);
+    console.log(`Server is running at port ${PORT}`);
 })
