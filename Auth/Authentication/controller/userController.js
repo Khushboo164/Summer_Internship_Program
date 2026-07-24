@@ -1,6 +1,6 @@
 const user = require('../models/user');
 
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt'); //USED TO CONVERT PASSWORD IN HASH COE FOR SECURITY PURPOSE
 const saltRounds = 10;
 
 module.exports.getHome = (req, res) => {

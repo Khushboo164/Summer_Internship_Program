@@ -43,5 +43,5 @@ const userRoutes = require("./routes/userRoute")
 app.use('/', userRoutes);
 
 app.listen(PORT, () => {
-    console.log(`Server is listening at ${PORT}`);
+    console.log(`Server is listening at PORT ${PORT}`);
 })

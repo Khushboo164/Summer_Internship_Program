@@ -4,6 +4,8 @@ const path = require('path');
 
 const userControllers = require('../controller/userController');
 
+// const userControllers = require('../controller/userController');
+
 router.get('/',userControllers.getHome);
 router.get('/login',userControllers.getLogin);
 router.get('/signup',userControllers.getSignup);
