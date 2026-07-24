@@ -7,6 +7,7 @@
 
 
 // on mongosh terminal create database
+
 > use sunstone
 
 
@@ -145,3 +146,5 @@ db.students.drop();
 
 // Drop Database -- Completely deletes the currently selected database, removing all its collections and metadata.
 db.dropDatabase();
+
+//all quesries ran successfully

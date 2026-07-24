@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 // const PORT = 8000;
 const path = require('path')
-const mongoose = require('mongoose');
+const mongoose = require('mongoose'); // mongoose required to use mongodb
 const PORT = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, 'public')));

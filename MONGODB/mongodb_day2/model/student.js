@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const {Schema} = mongoose;
 
-const studentSchema = new Schema({
+const studentSchema = new Schema({ //student schema created
     // name: String,
     // age: Number,
     // phone: Number,
